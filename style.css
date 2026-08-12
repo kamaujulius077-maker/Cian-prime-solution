@@ -1,28 +1,14 @@
-/* ==========================================================================
-   1. VARIABLES & COLOR PALETTE
-   ========================================================================== */
 :root {
-    /* Brand Palette (Extracted from Cian Prime Solutions Logo) */
-    --cps-red: #C81E45;
-    --cps-purple: #6A1B82;
-    --cps-blue: #1A4B9C;
-    --cps-gold: #F39C12;
-    --cps-dark: #1E293B;
-
-    /* Global Theme Assignments */
-    --primary: var(--cps-blue);
+    --primary: #0052cc;
     --primary-dark: #003d99;
-    --accent: var(--cps-gold);
-    --dark: var(--cps-dark);
-    --light-bg: #f8fafc;
+    --accent: #ffab00;
+    --dark: #172b4d;
+    --light-bg: #f4f5f7;
     --white: #ffffff;
-    --gray-text: #64748b;
+    --gray-text: #5e6c84;
     --border: #e2e8f0;
 }
 
-/* ==========================================================================
-   2. GLOBAL BASE STYLES
-   ========================================================================== */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -36,111 +22,80 @@ body {
     background-color: var(--white);
 }
 
-/* ==========================================================================
-   3. HEADER & NAVIGATION BAR
-   ========================================================================== */
-navbar {
+/* Navigation */
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.2rem 5%;
+    padding: 1rem 5%;
     background-color: var(--white);
-    border-top: 4px solid var(--cps-red);
-    /* Accent color bar */
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
     position: sticky;
     top: 0;
     z-index: 100;
 }
-/* Company Title with Brand Color Gradient */
-.company-title {
+
+.logo {
     font-size: 1.4rem;
-    font-weight: 800;
-    letter-spacing: 0.5px;
-    background: linear-gradient(90deg, var(--cps-red) 0%, var(--cps-purple) 50%, var(--cps-blue) 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    color: var(--cps-red);
-    /* Fallback for older browsers */
-    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+.logo-accent {
+    color: var(--primary);
 }
 
 nav a {
     margin-left: 1.5rem;
     text-decoration: none;
     color: var(--dark);
-    font-weight: 600;
+    font-weight: 500;
     transition: color 0.2s;
 }
 
 nav a:hover {
-    color: var(--cps-red);
+    color: var(--primary);
 }
 
 .btn-nav {
-    background: linear-gradient(135deg, var(--cps-red), var(--cps-purple));
+    background: var(--primary);
     color: var(--white) !important;
-    padding: 0.6rem 1.2rem;
+    padding: 0.5rem 1rem;
     border-radius: 6px;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.btn-nav:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(200, 30, 69, 0.3);
-}
-
-/* ==========================================================================
-   4. HERO SECTION
-   ========================================================================== */
+/* Hero Section */
 .hero {
-    background-color: var(--light-bg);
-    background-image: radial-gradient(#cbd5e1 1.2px, transparent 1.2px);
-    background-size: 24px 24px;
+    background: linear-gradient(135deg, #0052cc 0%, #002766 100%);
+    color: var(--white);
     padding: 6rem 5%;
     text-align: center;
-    position: relative;
-    border-bottom: 3px solid var(--border);
 }
 
 .hero-content {
-    max-width: 850px;
+    max-width: 800px;
     margin: 0 auto;
 }
 
 .hero h1 {
-    font-size: 3rem;
+    font-size: 2.75rem;
     line-height: 1.2;
-    margin-bottom: 1.25rem;
-    font-weight: 800;
-    color: var(--dark);
-}
-
-.hero h1 .highlight {
-    background: linear-gradient(135deg, var(--cps-red) 0%, var(--cps-purple) 50%, var(--cps-blue) 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    color: var(--cps-purple);
-    /* Fallback */
+    margin-bottom: 1rem;
 }
 
 .hero p {
-    font-size: 1.2rem;
-    color: var(--gray-text);
-    margin-bottom: 2.25rem;
+    font-size: 1.15rem;
+    opacity: 0.9;
+    margin-bottom: 2rem;
 }
 
 .hero-actions {
     display: flex;
     justify-content: center;
-    gap: 1.25rem;
+    gap: 1rem;
 }
 
-/* ==========================================================================
-   5. BUTTONS
-   ========================================================================== */
+/* Buttons */
 .btn {
     display: inline-block;
     padding: 0.75rem 1.5rem;
@@ -149,38 +104,33 @@ nav a:hover {
     text-decoration: none;
     border: none;
     cursor: pointer;
-    transition: transform 0.2s, box-shadow 0.2s, background 0.2s;
+    transition: background 0.2s;
 }
 
 .btn-primary {
-    background: linear-gradient(135deg, var(--cps-gold), #e67e22);
+    background: var(--accent);
     color: var(--dark);
-    font-weight: 700;
 }
 
 .btn-primary:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 16px rgba(243, 156, 18, 0.4);
+    background: #e69900;
 }
 
 .btn-secondary {
-    background: var(--dark);
+    background: rgba(255, 255, 255, 0.15);
     color: var(--white);
-    border: 1px solid var(--dark);
+    border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .btn-secondary:hover {
-    background: #0f172a;
-    transform: translateY(-2px);
+    background: rgba(255, 255, 255, 0.25);
 }
 
 .btn-full {
     width: 100%;
 }
 
-/* ==========================================================================
-   6. SECTIONS & LAYOUT CONTAINERS
-   ========================================================================== */
+/* Sections */
 .section {
     padding: 4rem 5%;
     max-width: 1200px;
@@ -204,7 +154,7 @@ nav a:hover {
     margin-bottom: 2.5rem;
 }
 
-/* Services Section */
+/* Services */
 .services-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
@@ -229,9 +179,7 @@ nav a:hover {
     margin-bottom: 1rem;
 }
 
-/* ==========================================================================
-   7. CATALOG FILTER & PRODUCT CARDS
-   ========================================================================== */
+/* Catalog Filter & Grid */
 .filter-bar {
     display: flex;
     justify-content: center;
@@ -306,9 +254,7 @@ nav a:hover {
     color: var(--primary);
 }
 
-/* ==========================================================================
-   8. CONTACT FORM & SOCIAL CONNECT
-   ========================================================================== */
+/* Contact Form */
 .contact-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -358,281 +304,10 @@ nav a:hover {
     color: #006644;
 }
 
-/* Contact Social Connect Bar */
-.social-connect {
-    margin-top: 2rem;
-    padding-top: 1.5rem;
-    border-top: 1px solid var(--border);
-}
-
-.social-connect h4 {
-    font-size: 1.1rem;
-    margin-bottom: 0.3rem;
-}
-
-.social-connect p {
-    font-size: 0.875rem;
-    color: var(--gray-text);
-    margin-bottom: 1rem;
-}
-
-.social-links {
-    display: flex !important;
-    gap: 0.75rem;
-}
-
-.social-icon {
-    display: inline-flex !important;
-    align-items: center;
-    justify-content: center;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background-color: var(--light-bg);
-    color: var(--dark);
-    text-decoration: none;
-    font-size: 1.1rem;
-    transition: all 0.3s ease;
-}
-
-.social-icon.instagram:hover {
-    background: #e1306c;
-    color: #fff;
-}
-
-.social-icon.facebook:hover {
-    background: #1877f2;
-    color: #fff;
-}
-
-.social-icon.linkedin:hover {
-    background: #0a66c2;
-    color: #fff;
-}
-
-.social-icon.twitter:hover {
-    background: #000000;
-    color: #fff;
-}
-
-.social-icon.whatsapp:hover {
-    background: #25d366;
-    color: #fff;
-}
-
-.social-icon:hover {
-    transform: translateY(-3px);
-}
-
-/* ==========================================================================
-   9. INTERACTIVE PRODUCT ORDER MODAL
-   ========================================================================== */
-.modal-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(9, 30, 66, 0.54);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 2000;
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.25s ease, visibility 0.25s ease;
-}
-
-.modal-overlay.active {
-    opacity: 1;
-    visibility: visible;
-}
-
-.modal-container {
-    background: var(--white);
-    width: 90%;
-    max-width: 500px;
-    padding: 2rem;
-    border-radius: 12px;
-    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.2);
-    position: relative;
-    transform: translateY(-20px);
-    transition: transform 0.25s ease;
-}
-
-.modal-overlay.active .modal-container {
-    transform: translateY(0);
-}
-
-.modal-close {
-    position: absolute;
-    top: 1rem;
-    right: 1.25rem;
-    background: none;
-    border: none;
-    font-size: 1.75rem;
-    color: var(--gray-text);
-    cursor: pointer;
-}
-
-.modal-close:hover {
-    color: var(--dark);
-}
-
-.modal-header {
-    margin-bottom: 1.25rem;
-    padding-right: 1.5rem;
-}
-
-.modal-header h2 {
-    font-size: 1.4rem;
-    margin: 0.25rem 0;
-}
-
-.modal-header p {
-    font-size: 0.875rem;
-    color: var(--gray-text);
-}
-
-.quantity-control {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-}
-
-.quantity-control button {
-    width: 36px;
-    height: 36px;
-    border: 1px solid var(--border);
-    background: var(--light-bg);
-    border-radius: 6px;
-    font-size: 1.2rem;
-    cursor: pointer;
-    font-weight: 600;
-}
-
-.quantity-control button:hover {
-    background: #ebecf0;
-}
-
-.quantity-control input {
-    width: 80px;
-    text-align: center;
-}
-
-.price-summary {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: var(--light-bg);
-    padding: 0.75rem 1rem;
-    border-radius: 6px;
-    margin-bottom: 1.25rem;
-    font-size: 0.9rem;
-}
-
-.price-summary strong {
-    color: var(--primary);
-    font-size: 1.05rem;
-}
-
-/* ==========================================================================
-   10. FLOATING WHATSAPP BUTTON
-   ========================================================================== */
-.whatsapp-float {
-    position: fixed;
-    bottom: 25px;
-    right: 25px;
-    width: 60px;
-    height: 60px;
-    background-color: #25d366;
-    color: #ffffff;
-    border-radius: 50px;
-    text-align: center;
-    font-size: 32px;
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
-    z-index: 1000;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    transition: all 0.3s ease;
-}
-
-.whatsapp-float:hover {
-    background-color: #128c7e;
-    transform: scale(1.1);
-    box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.35);
-}
-
-.whatsapp-icon {
-    margin-top: 2px;
-}
-
-.whatsapp-tooltip {
-    position: absolute;
-    right: 70px;
-    background-color: var(--dark);
-    color: #ffffff;
-    padding: 6px 12px;
-    border-radius: 6px;
-    font-size: 0.85rem;
-    font-weight: 500;
-    white-space: nowrap;
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.3s ease, visibility 0.3s ease;
-    pointer-events: none;
-}
-
-.whatsapp-float:hover .whatsapp-tooltip {
-    opacity: 1;
-    visibility: visible;
-}
-
-/* ==========================================================================
-   11. FOOTER
-   ========================================================================== */
 .footer {
+    text-align: center;
+    padding: 2rem;
     background: var(--dark);
     color: var(--white);
-    padding: 3rem 5% 1.5rem;
-}
-
-.footer-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 1.5rem;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.footer-brand p {
-    color: #97a0af;
-    font-size: 0.85rem;
-    margin-top: 0.3rem;
-}
-
-.footer-social {
-    display: flex !important;
-    align-items: center;
-    gap: 1rem;
-}
-
-.footer-social a {
-    color: #97a0af;
-    font-size: 1.2rem;
-    transition: color 0.2s;
-}
-
-.footer-social a:hover {
-    color: var(--accent);
-}
-
-.footer-divider {
-    border: none;
-    border-top: 1px solid #283e5d;
-    margin: 1.5rem 0;
+    font-size: 0.875rem;
 }
