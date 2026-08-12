@@ -39,18 +39,13 @@ body {
 /* ==========================================================================
    3. HEADER & NAVIGATION BAR
    ========================================================================== */
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1.2rem 5%;
+/* HEADER & NAV */
+header {
     background-color: var(--white);
-    border-top: 4px solid var(--cps-red);
-    /* Accent color bar */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    box-shadow: var(--shadow);
     position: sticky;
     top: 0;
-    z-index: 100;
+    z-index: 1000;
 }
 
 /* Company Title with Brand Color Gradient */
