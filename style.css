@@ -59,6 +59,9 @@ header {
     align-items: center;
     border-bottom: 1px solid #eee;
 }
+.logo {
+    text-align: center;
+}
 
 .logo h1 {
     font-size: 1.5rem;
