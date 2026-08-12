@@ -375,76 +375,39 @@ h2::after {
         padding: 30px;
     }
 }
-/* ===== SOCIAL MEDIA ICONS WITH NAMES ===== */
+/* ===== SOCIAL MEDIA ICONS - LOGO ONLY ===== */
 .social-links,
 .footer-social {
     display: flex;
-    gap: 20px;
+    gap: 15px;
     margin-top: 20px;
     flex-wrap: wrap;
 }
 
 .social-icon,
 .footer-social a {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
     display: flex;
     align-items: center;
-    gap: 10px;
-    padding: 12px 20px;
-    border-radius: 50px;
+    justify-content: center;
+    font-size: 1.3rem;
     text-decoration: none;
     color: white;
-    font-weight: 600;
-    font-size: 0.95rem;
-    font-family: 'Poppins', sans-serif;
-    transition: all 0.3s ease;
+    transition: all 0.4s ease;
     background: var(--cps-gradient);
-    box-shadow: 0 5px 15px rgba(123, 44, 191, 0.2);
+    /* CPS gradient by default */
+    box-shadow: 0 5px 15px rgba(123, 44, 191, 0.25);
 }
 
-.social-icon i,
-.footer-social a i {
-    font-size: 1.2rem;
-}
-
-/* Add the platform names with CSS */
-.social-icon.instagram::after {
-    content: "Instagram";
-}
-
-.social-icon.facebook::after {
-    content: "Facebook";
-}
-
-
-
-.social-icon.twitter::after {
-    content: "Twitter / X";
-}
-
-.social-icon.whatsapp::after {
-    content: "WhatsApp";
-}
-
-.footer-social a.instagram::after {
-    content: "Instagram";
-}
-
-.footer-social a.facebook::after {
-    content: "Facebook";
-}
-
-
-.footer-social a.twitter::after {
-    content: "Twitter / X";
-}
-
-/* Hover effects with brand colors */
 .social-icon:hover,
 .footer-social a:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+    transform: translateY(-5px) scale(1.1) rotate(5deg);
+    box-shadow: 0 10px 25px rgba(230, 57, 70, 0.4);
 }
 
+/* Brand colors on hover */
 .social-icon.instagram:hover {
     background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
 }
@@ -453,33 +416,23 @@ h2::after {
     background: #1877f2;
 }
 
-
-
 .social-icon.twitter:hover {
-    background: #000000;
+    background: #000;
 }
 
 .social-icon.whatsapp:hover {
     background: #25D366;
 }
 
-/* Footer version - smaller pills */
+/* Footer version - smaller */
 .footer-social a {
-    padding: 8px 16px;
-    font-size: 0.85rem;
+    width: 42px;
+    height: 42px;
+    font-size: 1.1rem;
 }
 
-.footer-social a i {
-    font-size: 1rem;
-}
-
-/* Mobile: stack them */
-@media (max-width: 600px) {
-    .social-links {
-        flex-direction: column;
-    }
-
-    .social-icon {
-        justify-content: center;
-    }
+/* Remove the ::after names we added before */
+.social-icon::after,
+.footer-social a::after {
+    content: none !important;
 }
