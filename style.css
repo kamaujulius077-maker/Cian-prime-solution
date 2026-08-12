@@ -59,9 +59,7 @@ header {
     align-items: center;
     border-bottom: 1px solid #eee;
 }
-.logo {
-    text-align: center;
-}
+
 
 .logo h1 {
     font-size: 1.5rem;
@@ -69,6 +67,7 @@ header {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+    text-align: center;
 }
 
 .logo p {
