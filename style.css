@@ -261,7 +261,7 @@ h2::after {
 
 /* ===== CONTACT ===== */
 .contact-container {
-    display: grid;
+    display: inline-flex;
     grid-template-columns: 1fr 1fr;
     gap: 60px;
     max-width: 1200px;
