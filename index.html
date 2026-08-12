@@ -4,370 +4,169 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Cian Prime Solutions | Printing, Branding and Graphics Designs</title>
-
-    <!-- External CSS file - add your CSS later -->
+    <title>Cian Prime Solutions | Printing, Graphic Design, Branding & Sales</title>
+    <!-- External CSS -->
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
-    <link rel="stylesheet" href="stye.css">
 </head>
 
 <body>
 
-    <!-- ================= HEADER ================= -->
+    <!-- HEADER NAVIGATION -->
     <header>
-        <div class="logo">
-            <h1>Cian Prime Solutions</h1>
-            <p>Print • Brand • Create</p>
-        </div>
-
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About Us</a></li>
+        <nav class="navbar">
+            <div class="logo">Cian Prime <span>Solutions</span></div>
+            <ul class="nav-links">
                 <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#products">Store</a></li>
+                <li><a href="#contact" class="btn-nav">Get a Quote</a></li>
             </ul>
         </nav>
     </header>
 
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Your All-In-One Print, Design & Branding Partner</h1>
+            <p>We transform ideas into high-quality physical prints, compelling brand identities, and top-tier
+                merchandise.</p>
+            <div class="hero-btns">
+                <a href="#contact" class="btn-primary">Request a Quote</a>
+                <a href="#products" class="btn-secondary">Browse Shop</a>
+            </div>
+        </div>
+    </section>
 
-    <!-- ================= HOME ================= -->
-    <main>
-
-        <section id="home">
-            <div class="hero-content">
-
-                <h2>Welcome to Cian Prime Solutions</h2>
-
-                <h3>
-                    Your Trusted Printing, Branding & Promotional Materials Partner
-                </h3>
-
-                <p>
-                    We provide professional printing serices, creative branding,
-                    graphics design and sell pens to individuals, businesses, and organizations.
+    <!-- SERVICES SECTION -->
+    <section id="services">
+        <div class="section-title">
+            <h2>What We Offer</h2>
+            <p>End-to-end solutions tailored to elevate your business visual identity</p>
+        </div>
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon">🖨️</div>
+                <h3>High-Quality Printing</h3>
+                <p>From business cards and brochures to large format banners and signage, we deliver crisp, vibrant
+                    prints.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">🎨</div>
+                <h3>Graphic & Digital Design</h3>
+                <p>Our creative team crafts custom logos, marketing collateral, and digital media assets that stand out.
                 </p>
-
-                <a href="#services">Explore Our Services</a>
-                <a href="#contact">Contact Us</a>
-
             </div>
-        </section>
-
-        <!-- ================= ABOUT ================= -->
-        <section id="about">
-
-            <h2>About Cian Prime Solutions</h2>
-
-            <p>
-                Cian Prime Solutions takes pride in providing affordable, high-quality printing, graphics
-                design, branding and promotional materials.
-            </p>
-
-            <p>
-                Our goal is to help businesses present themselves professionally through
-                creative designs and quality printed materials.
-            </p>
-
-            <div class="about-features">
-
-                <div>
-                    <h3>Quality</h3>
-                    <p>
-                        We focus on delivering affordable, high-quality products
-                        and professional services.
-                    </p>
-                </div>
-
-                <div>
-                    <h3>Creativity</h3>
-                    <p>
-                        Our creative solutions help your brand stand out
-                        from the competition.
-                    </p>
-                </div>
-
-                <div>
-                    <h3>Reliability</h3>
-                    <p>
-                        We strive to complete every project professionally
-                        and on time.
-                    </p>
-                </div>
-
+            <div class="service-card">
+                <div class="service-icon">🏷️</div>
+                <h3>Brand Identity Solutions</h3>
+                <p>Complete corporate branding including brand guidelines, apparel printing, and customized promo
+                    merchandise.</p>
             </div>
-
-        </section>
-        <!-- ================= ABOUT ================= -->
-        <section id="about">
-
-            <h2>About Cian Prime Solutions</h2>
-
-            <p>
-                Cian Prime Solutions is a creative printing and branding
-                company dedicated to providing high-quality printing,
-                design, branding and also manufucture pens.
-            </p>
-
-            <!-- <p>
-                    Our goal is to help businesses present themselves professionally through
-                    creative designs and quality printed materials.
+            <div class="service-card">
+                <div class="service-icon">🛍️</div>
+                <h3>Sales & Supplies</h3>
+                <p>We sell branded products, stationery, office supplies, and display equipment directly to your door.
                 </p>
-             -->
-            <div class="about-features">
-
-                <div>
-                    <h3>Quality</h3>
-                    <p>
-                        We focus on delivering high-quality products
-                        and professional services.
-                    </p>
-                </div>
-
-                <div>
-                    <h3>Creativity</h3>
-                    <p>
-                        Our creative solutions help your brand stand out
-                        from the competition.
-                    </p>
-                </div>
-
-                <div>
-                    <h3>Reliability</h3>
-                    <p>
-                        We strive to complete every project professionally
-                        and on time.
-                    </p>
-                </div>
-
             </div>
+        </div>
+    </section>
 
-        </section>
+    <!-- PRODUCTS & STORE SECTION -->
+    <section id="products">
+        <div class="section-title">
+            <h2>Featured Products & Services</h2>
+            <p>Filter through our catalog to find what you need</p>
+        </div>
 
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="print">Printing</button>
+            <button class="filter-btn" data-filter="branding">Branding</button>
+            <button class="filter-btn" data-filter="design">Design</button>
+        </div>
 
-        <!-- ================= SERVICES ================= -->
-        <section id="services">
-
-            <h2>Our Services</h2>
-
-            <div class="services-container">
-
-                <article class="service">
-                    <h3>Printing Services</h3>
-
-                    <p>
-                        We provide high-quality printing for different
-                        personal and business needs.
-                    </p>
-
-                    <ul>
-                        <li>Business cards</li>
-                        <li>Flyers</li>
-                        <li>Posters</li>
-                        <li>Brochures</li>
-                        <li>Certificates</li>
-                        <li>Invoices</li>
-                        <li>Receipts</li>
-                        <li>Letterheads</li>
-                    </ul>
-                </article>
-
-
-                <article class="service">
-                    <h3>Branding Services</h3>
-
-                    <p>
-                        Build a strong and professional identity for
-                        your business with our branding solutions.
-                    </p>
-
-                    <ul>
-                        <li>Logo design</li>
-                        <li>Business branding</li>
-                        <li>Vehicle branding</li>
-                        <li>T-shirt branding</li>
-                        <li>Signage</li>
-                        <li>Banner printing</li>
-                        <li>Promotional materials</li>
-                    </ul>
-                </article>
-
-
-                <article class="service">
-                    <h3>Graphic Design</h3>
-
-                    <p>
-                        We create professional and attractive designs
-                        for businesses, events and organizations.
-                    </p>
-
-                    <ul>
-                        <li>Logo designs</li>
-                        <li>Graphics designs</li>
-                        <li>Event posters</li>
-                        <li>Business profiles</li>
-                        <li>Wallpaper designs</li>
-                    </ul>
-                </article>
-
+        <div class="products-grid">
+            <div class="product-card" data-category="print">
+                <img src="https://picsum.photos/300/200?random=1" alt="Business Cards">
+                <div class="product-info">
+                    <h4>Premium Business Cards</h4>
+                    <p>Matte, glossy, or textured finishes with custom edge options.</p>
+                    <button class="btn-primary order-btn" data-product="Business Cards">Order Now</button>
+                </div>
             </div>
-
-        </section>
-
-
-        <!-- ================= STATIONERY ================= -->
-        <section id="Stationery pens">
-
-
-
-
-
-
-            <div class="stationery-item">
-                <h3>Products</h3>
-
-                <ul>
-                    <li>Ballpoint pens</li>
-                    <li>Leave behind literatures, Calenders, Notebooks,Cards, Fleryers</li>
-                </ul>
+            <div class="product-card" data-category="branding">
+                <img src="https://picsum.photos/300/200?random=2" alt="Branded T-Shirts">
+                <div class="product-info">
+                    <h4>Custom Apparel & T-Shirts</h4>
+                    <p>High-density screen printing and embroidery for corporate wear.</p>
+                    <button class="btn-primary order-btn" data-product="Custom Apparel">Order Now</button>
+                </div>
             </div>
-
-        </section>
-
-
-        <!-- ================= WHY CHOOSE US ================= -->
-        <section id="why-us">
-
-            <h2>Why Choose Cian Prime Solutions?</h2>
-
-            <div class="advantages">
-
-                <div>
-                    <h3>Professional Service</h3>
-                    <p>
-                        We provide professional solutions designed
-                        to meet your needs.
-                    </p>
+            <div class="product-card" data-category="print">
+                <img src="https://picsum.photos/300/200?random=3" alt="Rollup Banner">
+                <div class="product-info">
+                    <h4>Pull-Up Banners</h4>
+                    <p>Durable, portable indoor and outdoor marketing displays.</p>
+                    <button class="btn-primary order-btn" data-product="Pull-Up Banners">Order Now</button>
                 </div>
-
-                <div>
-                    <h3>Quality Products</h3>
-                    <p>
-                        We are committed to providing quality printing,
-                        branding and also manufucture pens.
-                    </p>
-                </div>
-
-                <div>
-                    <h3>Affordable Prices</h3>
-                    <p>
-                        We offer competitive prices for individuals,
-                        businesses and organizations.
-                    </p>
-                </div>
-
-                <div>
-                    <h3>Customer Satisfaction</h3>
-                    <p>
-                        Your satisfaction is one of our main priorities.
-                    </p>
-                </div>
-
             </div>
-
-        </section>
-
-        <!-- Contact & Quote Form -->
-        <section id="contact" class="section">
-            <div class="contact-container">
-                <div class="contact-info">
-                    <h2>Ready to Start Your Project?</h2>
-                    <p>Contact Cian Prime Solutions today for custom order quotes, bulk pricing, or design inquiries.
-                    </p>
-                    <ul>
-                        <li>📍 <strong>Address:</strong> Kweria road off Kirinyaga road, Nairobi, Kenya</li>
-                        <li>📧 <strong>Email:</strong> info@cianprime.com</li>
-                        <li>📞 <strong>Phone:</strong> +254717029296</li>
-                    </ul>
-
-                    <!-- Social Connect Strip -->
-                    <div class="social-connect">
-                        <h4>Connect With Us</h4>
-                        <p>Follow our social channels to view sample prints, client projects, and latest stationery
-                            releases.
-                        </p>
-                        <div class="social-links">
-                            <a href="https://instagram.com" target="_blank" aria-label="Instagram"
-                                class="social-icon instagram"><i class="fab fa-instagram"></i></a>
-                            <a href="https://facebook.com" target="_blank" aria-label="Facebook"
-                                class="social-icon facebook"><i class="fab fa-facebook-f"></i></a>
-                            <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"
-                                class="social-icon linkedin"><i class="fab fa-linkedin-in"></i></a>
-                            <a href="https://twitter.com" target="_blank" aria-label="Twitter"
-                                class="social-icon twitter"><i class="fab fa-x-twitter"></i></a>
-                            <a href="https://wa.me/15550192834" target="_blank" aria-label="WhatsApp"
-                                class="social-icon whatsapp"><i class="fab fa-whatsapp"></i></a>
-                        </div>
-                    </div>
+            <div class="product-card" data-category="design">
+                <img src="https://picsum.photos/300/200?random=4" alt="Logo Design">
+                <div class="product-info">
+                    <h4>Corporate Logo Package</h4>
+                    <p>Complete vector designs with style guides and source files.</p>
+                    <button class="btn-primary order-btn" data-product="Logo Package">Order Now</button>
                 </div>
+            </div>
+        </div>
+    </section>
 
-                <form id="quote-form" class="quote-form">
-                    <h3>Request a Quote</h3>
+    <!-- CONTACT / QUOTE SECTION -->
+    <section id="contact">
+        <div class="section-title">
+            <h2>Get in Touch</h2>
+            <p>Request a quick estimate or speak with our creative team</p>
+        </div>
+        <div class="contact-container">
+            <div class="contact-info">
+                <h3>Cian Prime Solutions</h3>
+                <p><strong>Location:</strong> Main Street, Suite 404, City Center</p>
+                <p><strong>Phone:</strong> +254 700 000 000</p>
+                <p><strong>Email:</strong> info@cianprimesolutions.com</p>
+                <p><strong>Hours:</strong> Mon - Fri: 8:00 AM - 5:00 PM</p>
+            </div>
+            <div class="contact-form">
+                <form id="quoteForm">
                     <div class="form-group">
-                        <label for="name">Full Name</label>
-                        <input type="text" id="name" required placeholder="Jane Doe">
+                        <input type="text" id="name" placeholder="Your Name" required>
                     </div>
                     <div class="form-group">
-                        <label for="email">Email Address</label>
-                        <input type="email" id="email" required placeholder="jane@company.com">
+                        <input type="email" id="email" placeholder="Your Email" required>
                     </div>
                     <div class="form-group">
-                        <label for="service">Service Needed</label>
-                        <select id="service">
-                            <option value="Stationery Printing">Stationery Printing (Notebooks/Pens)</option>
-                            <option value="Corporate Branding">Corporate Branding</option>
+                        <select id="serviceSelect">
+                            <option value="Printing">Printing Services</option>
                             <option value="Graphic Design">Graphic Design</option>
-                            <option value="Commercial Printing">Commercial Printing</option>
+                            <option value="Branding">Brand Strategy & Apparel</option>
+                            <option value="Product Purchase">Product Order</option>
                         </select>
                     </div>
                     <div class="form-group">
-                        <label for="message">Project Details</label>
-                        <textarea id="message" rows="4"
-                            placeholder="Specify quantity, dimensions, and special specifications..."></textarea>
+                        <textarea id="message" placeholder="Describe your project details, quantities, or specs..."
+                            required></textarea>
                     </div>
-                    <button type="submit" class="btn btn-primary btn-full">Submit Request</button>
-                    <div id="form-response" class="form-response"></div>
+                    <button type="submit" class="btn-primary">Send Inquiry</button>
                 </form>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Footer -->
-        <footer class="footer">
-            <div class="footer-content">
-                <div class="footer-brand">
-                    <span class="logo-accent">Cian</span> Prime Solutions
-                    <p>Your premier partner for corporate stationery, brand design, and quality printing.</p>
-                </div>
-                <div class="footer-social">
-                    <span>Follow us:</span>
-                    <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i
-                            class="fab fa-instagram"></i></a>
-                    <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i
-                            class="fab fa-facebook-f"></i></a>
-                    <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i
-                            class="fab fa-linkedin-in"></i></a>
-                    <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i
-                            class="fab fa-x-twitter"></i></a>
-                </div>
-            </div>
-            <hr class="footer-divider">
-            <p>&copy; 2026 Cian Prime Solutions. All Rights Reserved.</p>
-        </footer>
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2026 Cian Prime Solutions. All Rights Reserved. Printing | Graphic Design | Branding | Sales</p>
+    </footer>
 
-        <script src="script.js"></script>
+    <!-- External JavaScript -->
+    <script src="script.js"></script>
 </body>
 
 </html>
