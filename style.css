@@ -342,7 +342,10 @@ h2::after {
 .logo-accent {
     background: var(--cps-gradient);
     -webkit-background-clip: text;
+    background-clip: var(--text);
     -webkit-text-fill-color: transparent;
+    color: transparent;
+    display: inline-block;
 }
 
 .footer a {
@@ -412,9 +415,7 @@ h2::after {
     content: "Facebook";
 }
 
-.social-icon.linkedin::after {
-    content: "LinkedIn";
-}
+
 
 .social-icon.twitter::after {
     content: "Twitter / X";
@@ -432,9 +433,6 @@ h2::after {
     content: "Facebook";
 }
 
-.footer-social a.linkedin::after {
-    content: "LinkedIn";
-}
 
 .footer-social a.twitter::after {
     content: "Twitter / X";
@@ -455,9 +453,7 @@ h2::after {
     background: #1877f2;
 }
 
-.social-icon.linkedin:hover {
-    background: #0077b5;
-}
+
 
 .social-icon.twitter:hover {
     background: #000000;
