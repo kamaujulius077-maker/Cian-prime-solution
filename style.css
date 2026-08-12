@@ -436,3 +436,37 @@ h2::after {
 .footer-social a::after {
     content: none !important;
 }
+
+/* ===== MOBILE HEADER FIX ===== */
+@media (max-width: 768px) {
+    .hero {
+        padding-top: 120px;
+        /* push hero down so header doesn't cover it */
+    }
+
+    header {
+        padding: 15px 0;
+    }
+
+    header .logo h1 {
+        font-size: 1.5rem;
+        /* make logo smaller on mobile */
+    }
+
+    nav ul {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        padding-top: 140px;
+        /* even more space for very small screens */
+    }
+
+    header .logo p {
+        font-size: 0.8rem;
+    }
+}
