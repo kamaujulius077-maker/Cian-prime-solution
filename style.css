@@ -261,12 +261,12 @@ h2::after {
 
 /* ===== CONTACT ===== */
 .contact-container {
-    display: inline-flex;
+    display: inline-flexbox;
     grid-template-columns: 1fr 1fr;
     gap: 60px;
     max-width: 1200px;
     margin: 0 auto;
-    background: var(--white);
+    background: var(--cps-blue);
     padding: 60px;
     border-radius: 20px;
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.08);
