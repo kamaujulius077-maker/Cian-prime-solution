@@ -22,6 +22,15 @@ body {
     background-color: var(--white);
 }
 
+/* HERO SECTION */
+.hero {
+    background: linear-gradient(135deg, rgba(0, 82, 204, 0.9), rgba(23, 43, 77, 0.95)),
+        url('https://picsum.photos/1600/900?grayscale') center/cover no-repeat;
+    color: var(--white);
+    text-align: center;
+    padding: 6rem 2rem;
+}
+
 * Header+Nav */ header {
     background: var(--white);
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
