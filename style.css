@@ -356,7 +356,7 @@ h2::after {
 }
 
 .footer a {
-    color: white;
+    color: var(--cps-purple);
     margin: 0 10px;
 }
 
