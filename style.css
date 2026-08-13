@@ -352,7 +352,7 @@ h2::after {
 .logo-accent {
     background: var(--cps-gradient);
     -webkit-background-clip: text;
-    background-clip: var(--text);
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     color: transparent;
     display: inline-block;
