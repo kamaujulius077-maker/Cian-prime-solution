@@ -491,6 +491,7 @@ body {
 }
 
 /* CPS PENS GALLERY */
+.h2{
 .section-title {
     text-align: center;
     margin-bottom: 30px;
@@ -519,4 +520,4 @@ body {
     transform: scale(1.1) translateY(-10px);
     /* POP UP EFFECT */
     box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
-}
+}}
