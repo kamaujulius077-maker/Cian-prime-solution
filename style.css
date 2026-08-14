@@ -489,3 +489,34 @@ body {
     color: transparent;
     display: inline-block;
 }
+
+/* CPS PENS GALLERY */
+.section-title {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+
+.pen-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* centers everything */
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.pen-card {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pen-card:hover {
+    transform: scale(1.1) translateY(-10px);
+    /* POP UP EFFECT */
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+}
