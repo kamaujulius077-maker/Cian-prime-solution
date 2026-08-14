@@ -490,3 +490,66 @@ body {
     display: inline-block;
 }
 
+/* ===== CPS PENS GALLERY STYLING ===== */
+
+.section-title {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 30px;
+    margin-top: 40px;
+}
+
+.pen-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* Centers all images */
+    align-items: center;
+    gap: 25px;
+    /* Space between pictures */
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    /* Centers the whole gallery on page */
+}
+
+.pen-card {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    /* Makes image fill the box nicely */
+    border-radius: 15px;
+    /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    /* Soft shadow */
+    background: #fff;
+    padding: 5px;
+    transition: all 0.3s ease-in-out;
+    /* Smooth animation */
+}
+
+/* HOVER POP UP EFFECT */
+.pen-card:hover {
+    transform: scale(1.1) translateY(-12px);
+    /* Gets bigger + lifts up */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
+    /* Stronger shadow */
+    cursor: pointer;
+}
+
+/* Make it responsive for mobile */
+@media (max-width: 768px) {
+    .pen-card {
+        width: 45%;
+        height: 160px;
+    }
+}
+
+@media (max-width: 480px) {
+    .pen-card {
+        width: 90%;
+        height: 200px;
+    }
+}
