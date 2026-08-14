@@ -353,7 +353,7 @@
             </div>
         </section>
 
-        <h4 class="section-title"></h4> Branded Pens</h4>
+        <h4  style="text-align:center;"></h4> class="section-title"></h4> Branded Pens</h4>
         <div class="pens-gallery">
         <img src="pens1.jpg.jpeg" alt="Cian Prime Gel Pens" width="150">
         <img src="pens2.jpg.jpeg" alt="Cian Prime Gel Pens" width="150">
@@ -361,7 +361,27 @@
         <img src="pens4.jpg.jpeg" alt="Cian Prime Gel Pens" width="150">
         <img src="pens5.jpg.jpeg" alt="Cian Prime Gel Pens" width="150">
         <img src="pens6.jpg.jpeg" alt="Cian Prime Gel Pens" width="150">
+
         </div>
+        <style>
+            .pen-card {
+                width: 200px;
+                height: 200px;
+                object-fit: cover;
+                border-radius: 12px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                transition: all 0.3s ease;
+                /* makes the pop smooth */
+            }
+        
+            .pen-card:hover {
+                transform: scale(1.08) translateY(-5px);
+                /* POP UP effect */
+                box-shadow: 0 12px 20px rgba(0, 0, 0, 0.25);
+                /* bigger shadow */
+                cursor: pointer;
+            }
+        </style>
 
         <!-- Footer -->
         <footer class="footer">
