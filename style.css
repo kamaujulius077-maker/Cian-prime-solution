@@ -332,7 +332,7 @@ h2::after {
 
 /* ===== FOOTER ===== */
 .footer {
-    background: var(--cps-orange);
+    background: var(--cps-gradient);
     color: var(--cps-purple);
     padding: 60px 20px 20px;
     text-align: center;
