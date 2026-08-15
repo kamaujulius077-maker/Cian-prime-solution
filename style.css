@@ -333,7 +333,7 @@ h2::after {
 /* ===== FOOTER ===== */
 .footer {
     background: var(--cps-blue);
-    color: white;
+    color: var(--cps-gradient);
     padding: 60px 20px 20px;
     text-align: center;
 }
