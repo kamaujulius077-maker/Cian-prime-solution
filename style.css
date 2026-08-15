@@ -238,6 +238,7 @@ h2::after {
 
 .service ul li {
     padding: 8px 0;
+    color: var(--cps-gradient);
 }
 
 .service ul li::before {
@@ -245,6 +246,7 @@ h2::after {
     color: var(--cps-red);
     margin-right: 10px;
     font-weight: bold;
+    color: var(--cps-gradient);
 }
 
 .advantages div {
