@@ -490,3 +490,40 @@ body {
     display: inline-block;
 }
 
+/* FORCE CENTER PEN GALLERY */
+.services-section {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+
+.pen-gallery {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    /* THIS CENTERS THEM */
+    align-items: center !important;
+    gap: 20px !important;
+    max-width: 1000px !important;
+    margin: 0 auto !important;
+    /* THIS CENTERS THE WHOLE BLOCK */
+}
+
+.pen-card {
+    width: 200px !important;
+    height: 200px !important;
+    object-fit: cover !important;
+    border-radius: 12px !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1) !important;
+    transition: all 0.3s ease !important;
+}
+
+.pen-card:hover {
+    transform: scale(1.1) translateY(-10px) !important;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2) !important;
+}
