@@ -206,6 +206,7 @@ h2::after {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 40px;
+    background-color: var(--cps-blue);
 }
 
 .about-features div,
