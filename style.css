@@ -333,7 +333,7 @@ h2::after {
 /* ===== FOOTER ===== */
 .footer {
     background: var(--cps-blue);
-    color: var(--cps-gradient);
+    color: var(--cps-purple);
     padding: 60px 20px 20px;
     text-align: center;
 }
@@ -344,6 +344,7 @@ h2::after {
     max-width: 1200px;
     margin: 0 auto 30px;
     flex-wrap: wrap;
+    color: var(--cps-gradient);
 }
 
 .logo-accent {
