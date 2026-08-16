@@ -9,8 +9,8 @@
 
     <!-- External CSS file - add your CSS later -->
     <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
 
 
 </head>
@@ -271,7 +271,7 @@
                         We offer competitive prices for individuals,
                         businesses and organizations.
                     </p>
-                    
+
                 </div>
 
                 <div>
@@ -294,7 +294,7 @@
                     </p>
                     <ul>
                         <li>📍 <strong>Address:</strong> Kweria Road, Off Kirinyaga road, Nairobi, Kenya</li>
-                        <li>📧 <strong>Email:</strong> info@cianprime.co.ke</li>
+                        <li>📧 <strong>Email:</strong> info@cianprime.com</li>
                         <li>📞 <strong>Phone:</strong> +254717029296</li>
                     </ul>
 
@@ -305,61 +305,55 @@
                             releases.
                         </p>
                         <div class="social-links">
-                            <a href="https://instagram.com" target="_blank" aria-label="Instagram" class="social-icon instagram">
+                            <a href="https://instagram.com" target="_blank" aria-label="Instagram"
+                                class="social-icon instagram">
                                 <i class="fab fa-instagram"></i>
                             </a>
-                            <a href="https://facebook.com" target="_blank" aria-label="Facebook" class="social-icon facebook">
+                            <a href="https://facebook.com" target="_blank" aria-label="Facebook"
+                                class="social-icon facebook">
                                 <i class="fab fa-facebook-f"></i>
                             </a>
-                            <a href="https://twitter.com" target="_blank" aria-label="Twitter" class="social-icon twitter">
+                            <a href="https://twitter.com" target="_blank" aria-label="Twitter"
+                                class="social-icon twitter">
                                 <i class="fab fa-x-twitter"></i>
                             </a>
-                            <a href="https://wa.me/254717029296" target="_blank" aria-label="WhatsApp" class="social-icon whatsapp">
+                            <a href="https://wa.me/254717029296" target="_blank" aria-label="WhatsApp"
+                                class="social-icon whatsapp">
                                 <i class="fab fa-whatsapp"></i>
                             </a>
                         </div>
-                                </a>
-                        </div>
+                        </a>
                     </div>
                 </div>
+            </div>
 
-               
-                <form action="https://formsubmit.co/info@cianprime.co.ke" method="POST">
-                
-                    <div class="form-group">
-                        <label for="name">Full Name</label>
-                        <input type="text" id="name" name="name" required placeholder="Jane Doe">
-                    </div>
-                
-                    <div class="form-group">
-                        <label for="email">Email Address</label>
-                        <input type="email" id="email" name="email" required placeholder="jane@company.com">
-                    </div>
-                
-                    <div class="form-group">
-                        <label for="service">Service Needed</label>
-                        <select id="service" name="service">
-                            <option value="Stationery Printing">Stationery Printing (Notebooks/Pens)</option>
-                            <option value="Corporate Branding">Corporate Branding</option>
-                            <option value="Graphic Design">Graphic Design</option>
-                            <option value="Commercial Printing">Commercial Printing</option>
-                        </select>
-                    </div>
-                
-                    <div class="form-group">
-                        <label for="message">Project Details</label>
-                        <textarea id="message" name="message" rows="4"
-                            placeholder="Specify quantity, dimensions, and special specifications..."></textarea>
-                    </div>
-                
-                    <!-- FormSubmit hidden fields -->
-                    <input type="hidden" name="_captcha" value="false">
-                    <input type="hidden" name="_subject" value="New Quote Request - Cian Prime Website">
-                    <input type="hidden" name="_next" value="https://cianprimesolutions.com/thankyou.html">
-                
-                    <button type="submit" class="btn btn-primary btn-full">Submit Request</button>
-                    <input type="hidden" name="_next" value="https://cianprimesolutions.com/thankyou.html">
-                </form>
+            <form id="quote-form" class="quote-form">
+                <h3>Request a Quote</h3>
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" required placeholder="Jane Doe">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" required placeholder="jane@company.com">
+                </div>
+                <div class="form-group">
+                    <label for="service">Service Needed</label>
+                    <select id="service">
+                        <option value="Stationery Printing">Stationery Printing (Notebooks/Pens)</option>
+                        <option value="Corporate Branding">Corporate Branding</option>
+                        <option value="Graphic Design">Graphic Design</option>
+                        <option value="Commercial Printing">Commercial Printing</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="message">Project Details</label>
+                    <textarea id="message" rows="4"
+                        placeholder="Specify quantity, dimensions, and special specifications..."></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-full">Submit Request</button>
+                <div id="form-response" class="form-response"></div>
+            </form>
             </div>
         </section>
 
@@ -368,58 +362,58 @@
             <h2 class="section-title">Branded Pens</h2>
 
 
-        <div class="pens-gallery">
-        <img src="pens1.jpg.jpeg" alt="Cian Prime Gel Pens" width="150">
-        <img src="pens2.jpg.jpeg" alt="Cian Prime Gel Pens" width="150">
-        <img src="pens3.jpg.jpeg" alt="Cian Prime Gel Pens" width="150">
-        <img src="pens4.jpg.jpeg" alt="Cian Prime Gel Pens" width="150">
-        <img src="pens5.jpg.jpeg" alt="Cian Prime Gel Pens" width="150">
-        <img src="pens6.jpg.jpeg" alt="Cian Prime Gel Pens" width="150">
+            <div class="pens-gallery">
+                <img src="pens1.jpg.jpeg" alt="Cian Prime Gel Pens" width="150">
+                <img src="pens2.jpg.jpeg" alt="Cian Prime Gel Pens" width="150">
+                <img src="pens3.jpg.jpeg" alt="Cian Prime Gel Pens" width="150">
+                <img src="pens4.jpg.jpeg" alt="Cian Prime Gel Pens" width="150">
+                <img src="pens5.jpg.jpeg" alt="Cian Prime Gel Pens" width="150">
+                <img src="pens6.jpg.jpeg" alt="Cian Prime Gel Pens" width="150">
 
-        </div>
-        <style>
-            .pen-card {
-                width: 200px;
-                height: 200px;
-                object-fit: cover;
-                border-radius: 12px;
-                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-                transition: all 0.3s ease;
-                /* makes the pop smooth */
-            }
-        
-            .pen-card:hover {
-                transform: scale(1.08) translateY(-5px);
-                /* POP UP effect */
-                box-shadow: 0 12px 20px rgba(0, 0, 0, 0.25);
-                /* bigger shadow */
-                cursor: pointer;
-            }
-        </style>
-
-        <!-- Footer -->
-        <footer class="footer">
-            <div class="footer-content">
-                <div class="footer-brand">
-                    <span class="logo-accent">Cian Prime Solutions</span> 
-                    <p>Your premier partner for corporate stationery, brand design, and quality printing.</p>
-                </div>
-                <div class="footer-social">
-                    <span>Follow us:</span>
-                    <a href="https://instagram.com" target="_blank" aria-label="Instagram" class="social-icon instagram"><i
-                            class="fab fa-instagram"></i></a>
-                    <a href="https://facebook.com" target="_blank" aria-label="Facebook" class="social-icon facebook"><i
-                            class="fab fa-facebook-f"></i></a>
-                    
-                    <a href="https://twitter.com" target="_blank" aria-label="Twitter" class="social-icon facebook"><i
-                            class="fab fa-x-twitter"></i></a>
-                </div>
             </div>
-            <hr class="footer-divider">
-            <p>&copy; 2026 Cian Prime Solutions. All Rights Reserved.</p>
-        </footer>
+            <style>
+                .pen-card {
+                    width: 200px;
+                    height: 200px;
+                    object-fit: cover;
+                    border-radius: 12px;
+                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                    transition: all 0.3s ease;
+                    /* makes the pop smooth */
+                }
 
-        <script src="{{ url_for('static', filename='script.js') }}"></script>
+                .pen-card:hover {
+                    transform: scale(1.08) translateY(-5px);
+                    /* POP UP effect */
+                    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.25);
+                    /* bigger shadow */
+                    cursor: pointer;
+                }
+            </style>
+
+            <!-- Footer -->
+            <footer class="footer">
+                <div class="footer-content">
+                    <div class="footer-brand">
+                        <span class="logo-accent">Cian Prime Solutions</span>
+                        <p>Your premier partner for corporate stationery, brand design, and quality printing.</p>
+                    </div>
+                    <div class="footer-social">
+                        <span>Follow us:</span>
+                        <a href="https://instagram.com" target="_blank" aria-label="Instagram"
+                            class="social-icon instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://facebook.com" target="_blank" aria-label="Facebook"
+                            class="social-icon facebook"><i class="fab fa-facebook-f"></i></a>
+
+                        <a href="https://twitter.com" target="_blank" aria-label="Twitter"
+                            class="social-icon facebook"><i class="fab fa-x-twitter"></i></a>
+                    </div>
+                </div>
+                <hr class="footer-divider">
+                <p>&copy; 2026 Cian Prime Solutions. All Rights Reserved.</p>
+            </footer>
+
+            <script src="{{ url_for('static', filename='script.js') }}"></script>
 </body>
 
 </html>
